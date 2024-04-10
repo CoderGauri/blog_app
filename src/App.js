@@ -4,14 +4,16 @@ import './App.css';
 function App() {
   const [postName, setPostName] = useState('');
   const [description, setDescription] = useState('');
+  const[author , setAuthor] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
     // Here you can handle form submission, e.g., send data to backend or perform any necessary actions
-    console.log("Submitted: ", { postName, description });
+    console.log("Submitted: ", { postName, description ,author});
     // You can also reset the form fields after submission if needed
     setPostName('');
     setDescription('');
+    setAuthor('');
   };
 
   return (
@@ -34,6 +36,15 @@ function App() {
             id="description"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="Author">Author:</label>
+          <textarea
+            id="Author"
+            value={author}
+            onChange={(e) => setAuthor(e.target.value)}
             required
           />
         </div>
