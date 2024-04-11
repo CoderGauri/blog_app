@@ -9,7 +9,8 @@ function App() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const newPost = { postName, description };
+    const newPost = { postName, description, author };
+    setPosts([...posts , newPost])
     // Here you can handle form submission, e.g., send data to backend or perform any necessary actions
     console.log("Submitted: ", { postName, description ,author});
     // You can also reset the form fields after submission if needed
@@ -62,7 +63,7 @@ function App() {
               <p>{post.author}</p>
             </li>
           ))}
-        </ul>
+        </ul> 
       </div>
     </div>
   );
