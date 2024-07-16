@@ -1,52 +1,30 @@
-.App {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f4f4f4;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.main{
+  height: 50px;
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-h1 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #333;
-}
 
-.form-group {
-  margin-bottom: 25px;
-}
+.main1  {
+  height: 130%;
+  width: 28%;
+  border:2px black solid;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  }
 
-label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
+  .green{
+    background: #36ea5d;
+  }
 
-input[type='text'],
-textarea {
-  width: 100%;
-  padding: 12px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
+  .blue {
+    background-color: blue;
+  }
 
-textarea {
-  resize: vertical; /* Allow vertical resizing of textarea */
-}
-
-button {
-  padding: 12px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
+  .square{
+    height: 20px;
+    width: 20px;
+  }
